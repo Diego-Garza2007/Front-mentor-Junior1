@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+</head>
+<body>
+<main class="main">
+<section class="section">
+  <picture>
+    <source srcset="./assets/images/illustration-sign-up-mobile.svg" media="(max-width: 1300px)">
+    <img src="./assets/images/illustration-sign-up-desktop.svg" alt="" class="section__desktop">
+  </picture>
+  <div class="section__content">
+  <h1 class="section__title">
+    Stay updated!
+  </h1>
+
+
+  <p class="section__join">Join 60,000+ product managers receiving monthly updates on:</p>
+
+  <div class="section__list"><img src="./assets/images/icon-list.svg"><p>Product discovery and building what matters</p></div>
+  <div class="section__list"><img src="./assets/images/icon-list.svg"><p>Measuring to ensure updates are a success</p></div>
+  <div class="section__list"><img src="./assets/images/icon-list.svg"><p>And much more!</p></div>
+
+  <div class="section__flextitle">
+    <p class="section__formtitle">Email address</p>
+    <p class="section__textError oculto">Valid email required</p>
+  </div>
+
+  
+  <form id="form">
+    <input type="email" name="email" placeholder="   email@company.com" class="section__email  section__border" id="emailSpace" required>
+    <input type="submit" value="Subscribe to monthly newsletter" class="section__submit" id="sub">
+  </form>
+
+ 
+</div>
+</section>
+
+
+
+  <!-- Success message start -->
+<div class="page2 oculto">
+  <img src="./assets/images/icon-success.svg">
+  <h1 class="page2__title">Thanks for subscribing!</h1>
+
+ <p class="page2__text"> A confirmation email has been sent to <span id="fill"></span> . 
+  Please open it and click the button inside to confirm your subscription.</p>
+
+ <button class="page2__button">Dismiss message</button> 
+</div>
+</main>
+<script src="./script.js"></script>  
+</body>
+</html>
